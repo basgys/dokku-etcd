@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+export ETCD_ROOT=${ETCD_ROOT:="/var/lib/dokku/services/etcd"}
+export ETCD_IMAGE=${ETCD_IMAGE:="quay.io/coreos/etcd"}
+
+export PLUGIN_DATA_ROOT=$ETCD_ROOT
+export PLUGIN_DATASTORE_PORTS=(2379)
+export PLUGIN_DEFAULT_ALIAS="CONFIG"
+export PLUGIN_ALT_ALIAS="DOKKU_ETCD"
