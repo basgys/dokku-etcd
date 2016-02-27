@@ -131,7 +131,7 @@ case "$1" in
     service_logs "$2" "$3"
     ;;
 
-  help)
+  help | etcd:help)
     cat && cat<<EOF
     etcd:create <name>, Create new ETCD container
     etcd:destroy <name>, Destroy ETCD container
@@ -141,7 +141,7 @@ case "$1" in
     etcd:link <name> <app>, Link etcd service to the app
     etcd:unlink <name> <app>, Unlink etcd service from the app
     etcd:expose <name> [port], Expose on a custom port if provided (random port otherwise)
-    etcd:unexpose <name> Unexpose a previously exposed etcd service
+    etcd:unexpose <name>, Unexpose a previously exposed etcd service
     etcd:logs <name> [-t], Print the most recent log(s) for this service
 EOF
     ;;
