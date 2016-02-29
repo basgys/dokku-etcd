@@ -35,7 +35,7 @@ etcd:unlink <name> <app>   Unlink etcd service from the app
 ## usage
 
 ```shell
-# create a mariadb service named lolipop
+# create an etcd service named lolipop
 dokku etcd:create lolipop
 
 # another service can be linked to your app
