@@ -132,7 +132,7 @@ case "$1" in
     ;;
 
   help | etcd:help)
-    cat && cat<<EOF
+    cat<<EOF
     etcd:create <name>, Create new ETCD container
     etcd:destroy <name>, Destroy ETCD container
     etcd:start <name>, Start a previously stopped etcd service
