@@ -1,3 +1,5 @@
+# This repository is no longer maintained.
+
 # dokku etcd (beta)
 
 etcd plugin for dokku.
